@@ -12,7 +12,7 @@ function startGame(){
   birdBottom -= 2
   bird.style.bottom = birdBottom + 'px'
 }
-let timerId = setInterval(startGame, 20)
+let timerId = setInterval(startGame, 10)
 document.addEventListener('keyup', gameControl)
 function gameControl(e){
   if(e.keyCode === 32) jump()
@@ -57,7 +57,7 @@ function generateObstacles(){
 
   }
 
-  let timerId1 = setInterval(moveObstacle, 20)
+  let timerId1 = setInterval(moveObstacle, 10)
   if(!isGameOver) setTimeout(generateObstacles, 3500)
 }
 
