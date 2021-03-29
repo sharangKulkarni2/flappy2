@@ -58,7 +58,7 @@ function generateObstacles(){
   }
 
   let timerId1 = setInterval(moveObstacle, 10)
-  if(!isGameOver) setTimeout(generateObstacles, 3500)
+  if(!isGameOver) setTimeout(generateObstacles, 1000)
 }
 
 function gameOver(){
